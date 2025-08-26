@@ -1,7 +1,8 @@
 // main.js
 // Developed by DaylanDStoica
 
-addEventListener("sendMessage".click, function() {
+// addEventListener("sendMessage".click, function() {
+document.getElementById("sendMessage").addEventListener("click", function() {
     const messageInput = document.getElementById("messageInput");
     const message = messageInput.value;
     if (message) {
@@ -9,6 +10,8 @@ addEventListener("sendMessage".click, function() {
         messagesDiv.innerHTML += `<div>${message}</div>`;
         messageInput.value = "";
         // console.log("Message sent:", message);
-        this.document.getElementById('status').textContent = 'Message sent.';
+        document.getElementById('status').textContent = 'Message sent.';
     }
+    document.getElementById('status').textContent = 'Message sent.';
+
 });
